@@ -1,0 +1,13 @@
+- hosts: linux
+  vars:
+    games:
+      - cricket
+      - volleyball
+      - rugby
+      - basketball
+  tasks:
+  - name: print games list
+    debug: msg="{{item}}"
+    with_items:
+      - "{{games}}"  
+

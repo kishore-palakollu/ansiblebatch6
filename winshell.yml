@@ -1,0 +1,4 @@
+- hosts: windows
+  tasks:
+  - name: execute power shell
+    win_shell: C:\temp\choco.ps1 >> C:\temp\choco_output.txt
